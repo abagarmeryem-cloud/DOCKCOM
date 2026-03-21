@@ -24,7 +24,7 @@ jobs:
       - name: Push Docker images
         run: |
           docker tag devmery/flask-api:latest ${{ secrets.DOCKER_USERNAME }}/flask-api:latest
-          docker push ${{ secrets.DOCKER_USERNAME }}/devmery/flask-api:latest
+          docker push ${{ secrets.DOCKER_USERNAME }}/flask-api:latest
 
           docker tag devmery/flask-app:latest ${{ secrets.DOCKER_USERNAME }}/flask-app:latest
-          docker push ${{ secrets.DOCKER_USERNAME }}/devmery/flask-app:latest
+          docker push ${{ secrets.DOCKER_USERNAME }}/flask-app:latest
